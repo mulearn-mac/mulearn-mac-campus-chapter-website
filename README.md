@@ -1,2 +1,4 @@
-# mulearn-mac-campus-chapter-website
-Repository to hold source code for the website of our mulearn campus chapter at Mar Augusthinose college Ramapuram
+<h3>Mulearn Mar Augustinose college Ramapuram</h3>
+
+
+Official Campus Chapter Website, View live here: [mulearn.mac](https://mulearnatmac.netlify.app)
