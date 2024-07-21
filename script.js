@@ -2,7 +2,7 @@ var rankList = document.getElementById("rankList");
 var top10Div = document.getElementById("top10Div");
 var macRankId = document.getElementById("macRankId");
 var macRankCard = document.getElementById("macRankCard");
-var data, rankImgSrc, color;
+var data;
 
 fetch("https://opensheet.elk.sh/16yJ9HR1f8UjrJDJQBSQcbsCLvoyuFZ2NOALxzk9pdvY/mac")
   .then((res) => res.json())
@@ -32,67 +32,118 @@ function assignData(Data) {
   }
   console.log("Rank assigning Succes!!");
 
-  for (i = 0; i < data.length; i++) {
-
-    if(i>=0 && i<=2){
-      switch(data[i].rank){
-          case 1: 
-          {
-              rankImgSrc = "assets/img/firstCrown.png"; color = "text-warning";
-              break;
-              
-          }
-          case 2:
-            {
-              rankImgSrc = "assets/img/secondCrown.png"; color = "text-silver";
-              break;
-              
-            }
-          case 3:
-            {
-              rankImgSrc = "assets/img/thirdCrown.png"; 
-              color = "text-bronze";
-              break;   
-            }
-          default: 
-            {
-                rankImgSrc = "assets/img/defaultRank.png";
-                color = "text-info";
-            }
-      }
-      top10Div.innerHTML = top10Div.innerHTML + `
-      <div class="col-md-4 col-8 rankItemTop text-center  d-flex flex-column justify-content-around align-items-center mx-2 firstRank w-fit">
-            <div>
-                <img src="${rankImgSrc}" alt="" class="firstRankPic mt-3">
-                <p class=" d-block display-3 en-sirin  z-3 ${color}">#${data[i].rank}</p>
-            </div>
-            <div class="mt-4">
-                <p class="en-Oxanium h4 text-info">${data[i].studentName}</p>
-                <p class="en-Oxanium h4 topRankScore p-1 px-3">${data[i].MACscoreToday}</p>
-            </div>
-        </div>
-      
-      `
+  switch(data[0].rank){
+    case 1:{
+      var rankImgSrc1 = "assets/img/firstCrown.png"; 
+      var color1 = "text-first";
+      break;
     }
+    case 2:{
+      var rankImgSrc1 = "assets/img/secondCrown.png"; 
+      var color1 = "text-second";
+      break;
+    }
+    case 3:{
+      var rankImgSrc1 = "assets/img/thirdCrown.png"; 
+      var color1 = "text-third";
+      break;
+    }
+    default:{
+      var rankImgSrc1 = "assets/img/defaultRank.png"; 
+      var color1 = "text-light";
+      break;
+    }
+  }
 
-    else{
-      switch(data[i].rank){
+  switch(data[1].rank){
+    case 1:{
+      var rankImgSrc2 = "assets/img/firstCrown.png"; 
+      var color2 = "text-first";
+      break;
+    }
+    case 2:{
+      var rankImgSrc2 = "assets/img/secondCrown.png"; 
+      var color2 = "text-second";
+      break;
+    }
+    case 3:{
+      var rankImgSrc2 = "assets/img/thirdCrown.png"; 
+      var color2 = "text-third";
+      break;
+    }
+    default:{
+      var rankImgSrc2 = "assets/img/defaultRank.png"; 
+      var color2 = "text-light";
+      break;
+    }
+  }
+
+  switch(data[2].rank){
+    case 1:{
+      var rankImgSrc3 = "assets/img/firstCrown.png"; 
+      var color3 = "text-first";
+      break;
+    }
+    case 2:{
+      var rankImgSrc3 = "assets/img/secondCrown.png"; 
+      var color3 = "text-second";
+      break;
+    }
+    case 3:{
+      var rankImgSrc3 = "assets/img/thirdCrown.png"; 
+      var color3 = "text-third";
+      break;
+    }
+    default:{
+      var rankImgSrc3 = "assets/img/defaultRank.png"; 
+      var color3 = "text-light";
+      break;
+    }
+  }
+
+  top10Div.innerHTML = top10Div.innerHTML + `
+        <div class="col-4 text-center d-flex flex-column justify-content-center align-items-center ${color2}">
+          <img src="${rankImgSrc2}" alt="" class="firstRankPic">
+          <p class="h3">#${data[1].rank}</p>
+          <p class="overflow-auto text-nowrap w-100 no-scrollbar">${data[1].studentName}</p>
+          <p class="en-Oxanium ls-1">${data[1].MACscoreToday}</p>
+        </div>
+
+        <div class="col-4 text-center d-flex flex-column justify-content-center align-items-center top-1  ${color1}">
+            <img src="${rankImgSrc1}" alt="" class="firstRankPic pb-2">
+            <p class="h2">#${data[0].rank}</p>
+            <p class="overflow-auto text-nowrap w-100 no-scrollbar">${data[0].studentName}</p>
+            <p class="en-Oxanium ls-1">${data[0].MACscoreToday}</p>
+        </div>
+
+        <div class="col-4 text-center d-flex flex-column justify-content-center align-items-center  ${color3} top-side">
+            <img src="${rankImgSrc3}" alt="" class="firstRankPic">
+            <p class="h3">#${data[2].rank}</p>
+            <p class="overflow-auto text-nowrap w-100 no-scrollbar">${data[2].studentName}</p>
+            <p class="en-Oxanium ls-1">${data[2].MACscoreToday}</p>
+        </div>
+      `
+
+    for(i=3; i<data.length; i++)
+    {
+      switch(data[i].rank)
+      {
           case 1: 
-          {
-              rankImgSrc = "assets/img/firstCrown.png"; color = "text-warning";
-              break;
-              
-          }
+            {
+                rankImgSrc = "assets/img/firstCrown.png"; color = "text-first";
+                break;
+                
+            }
           case 2:
             {
-              rankImgSrc = "assets/img/secondCrown.png"; color = "text-silver";
+              rankImgSrc = "assets/img/secondCrown.png"; color = "text-second";
               break;
               
             }
           case 3:
             {
               rankImgSrc = "assets/img/thirdCrown.png"; 
-              color = "text-bronze";
+              color = "text-third";
               break;   
             }
           default: 
@@ -103,17 +154,19 @@ function assignData(Data) {
         }
           rankList.innerHTML = rankList.innerHTML + 
           `
-            <div class="text-light normalRankItem d-flex flex-row justify-content-between align-items-center normalRankBg px-2 py-1">
-            <p class="rank my-auto h3 en-iceberg p-0 m-0 ${color}">#${data[i].rank}</p>
-            <img src="${rankImgSrc}" class="normalRankPic"></img>
+            <div class="text-light normalRankItem d-flex flex-row justify-content-between align-items-center normalRankBg px-2 py-1 hover-scale-2">
+            <span class="d-flex flex-row justify-content-center align-items-center">
+                    <p class="rank my-auto h3 en-iceberg p-0 m-0 ${color} mr-4">#${data[i].rank} </p>
+                    <img src="${rankImgSrc}" class="normalRankPic">
+                  </span>
             <p class="normalRankName my-auto text-nowrap">${data[i].studentName}</p>
             <p class="normalRankScore my-auto">${data[i].MACscoreToday}</p>
           </div>
           `
     }
-  }
-}
 
+}
+// currently working end
 
 function generateMacRank() {
   var muId = macRankId.value;
@@ -137,35 +190,38 @@ function generateMacRank() {
               switch(data[i].rank){
                   case 1: 
                   {
-                      rankImgSrc = "assets/img/firstCrown.png"; color = "text-warning";
+                      rankImgSrc = "assets/img/firstCrown.png"; color = "text-first";
                       break;
                       
                   }
                   case 2:
                     {
-                      rankImgSrc = "assets/img/secondCrown.png"; color = "text-silver";
+                      rankImgSrc = "assets/img/secondCrown.png"; color = "text-second";
                       break;
                       
                     }
                   case 3:
                     {
                       rankImgSrc = "assets/img/thirdCrown.png"; 
-                      color = "text-bronze";
+                      color = "text-third";
                       break;   
                     }
                   default: 
                     {
                         rankImgSrc = "assets/img/defaultRank.png";
-                        color = "text-info";
+                        color = "text-light";
                     }
               }
               macRankCard.innerHTML = `
-                  <div class="text-light normalRankItem d-flex flex-row justify-content-around align-items-center normalRankBg px-2 py-1 my-3">
-                  <p class="rank my-auto h3 en-iceberg p-0 m-0 ${color}">#${data[i].rank}</p>
-                  <img src="${rankImgSrc}" class="normalRankPic"></img>
+                  <div class="text-light normalRankItem d-flex flex-row justify-content-between align-items-center normalRankBg px-2 py-1 my-3 bg-secondary">
+                  <span class="d-flex flex-row justify-content-center align-items-center">
+                    <p class="rank my-auto h3 en-iceberg p-0 m-0 ${color} mr-3">#${data[i].rank} </p>
+                    <img src="${rankImgSrc}" class="normalRankPic"></img>
+                  </span>
                   <p class="normalRankName my-auto text-nowrap">${data[i].studentName}</p>
                   <p class="normalRankScore my-auto">${data[i].MACscoreToday}</p>
-              </div>`;
+              </div>
+            `;
               flag = 1;
               break;
           }
@@ -197,18 +253,3 @@ function fetchMacScoreData() {
 }
 
 
-// old rank List item
-// `
-//           <div class="rankItem d-flex flex-row justify-content-around align-items-center text-success pt-2 minw-25 py-md-3">
-//             <div class="d-flex flex-column en-seriel">
-//               <p class="h5 ls-l rank en-sirin">Rank</p>
-//               <div class="btn btn-outline-light en-iceberg">${data[i].rank}</div>
-//             </div>
-//             <p class="text-left p fw-400 text-light en-oxanium" id="name">${data[i].studentName}</p>
-//             <div class="d-flex flex-column">
-//               <p class="text-warning score en-iceland h5">MAC Score</p>
-//               <div class="btn btn-outline-light en-iceberg">${data[i].score}</div>
-//             </div>
-//           </div>
-//           <hr class="bg-dark">
-//         `;
