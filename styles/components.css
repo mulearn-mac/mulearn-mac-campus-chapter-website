@@ -1,17 +1,38 @@
-.nav-link:hover,.navbar-brand:hover{
-    color: darkorange;
-}
-  
-.nav-link,.navbar-brand{
-    transition: all
-    0.5s;
+.nav-link:hover,
+.navbar-brand:hover {
+  color: darkorange;
 }
 
-.nav-item{
-    padding:0 10px ;    
+.nav-link,
+.navbar-brand {
+  transition: all 0.5s;
 }
 
-.justify-content-start{
-    justify-content: start;
-  }
-  
+.nav-item {
+  padding: 0 10px;
+}
+
+.justify-content-start {
+  justify-content: start;
+}
+
+.adm {
+  font-size: 18px;
+  color: #fff;
+  background-color: #8061fa;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-radius: 5px;
+  padding: 4px 8px;
+  margin: 0 2px;
+  font-weight: 500;
+  transition: all 0.5s;
+}
+
+.navbar-brand:hover .adm {
+  font-size: 18px;
+  color: #8061fa;
+  background-color: #fff;
+  padding: 0;
+  font-weight: 800;
+}
