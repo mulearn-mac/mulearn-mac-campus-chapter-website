@@ -1,9 +1,24 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-note.js
-dummy.html
-vendors/bootstrap/bootstrap.min.css
-vendors/bootstrap/bootstrap.min.js
-vendors/bootstrap/jquery-3.3.1.slim.min.js
-vendors/bootstrap/popper.min.js
-assets/img/iot2.1.8.lab1.svg
-meet.txt
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
