@@ -94,7 +94,7 @@ function Footer() {
         </Link>
 
         <Link
-          href="/campus-chapter/execom"
+          to="/campus-chapter/execom"
           className="small col-4 col-md-2 py-2 text-left text-decoration-none link-orange transition-03"
         >
           Our Team
