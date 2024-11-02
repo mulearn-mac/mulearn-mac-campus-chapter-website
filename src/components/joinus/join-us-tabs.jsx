@@ -56,6 +56,9 @@ function JoinUsTabs({ activeTab }) {
         <Tab.Content>
           <Tab.Pane className="px-3" eventKey="step-1">
             <div className="description">
+              <h3 className="text-center p-4 bg-secondary text-light rounded">
+                Register for a muLearn account and obtain your muId
+              </h3>
               <p className="tips alert alert-info h6 my-2 py-2  font-weight-normal">
                 As an official community, mulearn has a well defined system and
                 every mulearn member has his/her own profile and a dashboard. So
@@ -140,6 +143,9 @@ function JoinUsTabs({ activeTab }) {
 
           <Tab.Pane className="px-3" eventKey="step-2">
             <div className="description">
+              <h3 className="text-center p-4 bg-secondary text-light rounded">
+                Create a Discord account and Join muLearn Discord server.
+              </h3>
               <p className="tips alert alert-info h6 my-2 py-2  font-weight-normal">
                 muLearn works inside Discord. There we have our own server and a
                 bunch of channels. So to become part of muLearn you must first
@@ -229,6 +235,9 @@ function JoinUsTabs({ activeTab }) {
 
           <Tab.Pane className="px-3" eventKey="step-3">
             <div className="description">
+              <h3 className="text-center p-4 bg-secondary text-light rounded">
+                Accept rules and conditions.
+              </h3>
               <p className="tips alert alert-info h6 my-2 py-2  font-weight-normal ">
                 After joining muLearn you must accept our rules and conditions.
                 muLearn's Discord Server is <strong>super strict</strong> with
@@ -264,6 +273,9 @@ function JoinUsTabs({ activeTab }) {
 
           <Tab.Pane className="px-3" eventKey="step-4">
             <div className="Description">
+              <h3 className="text-center p-4 bg-secondary text-light rounded">
+                Connect your muId with your discord account.
+              </h3>
               <p className="tips alert alert-info h6 my-2 py-2  font-weight-normal ">
                 You now have a muLearn account and a Discord account. But
                 currently they are disconnected. We need to connect them inorder
@@ -393,6 +405,9 @@ function JoinUsTabs({ activeTab }) {
 
           <Tab.Pane className="px-3" eventKey="step-5">
             <div>
+              <h3 className="text-center p-4 bg-secondary text-light rounded">
+                Introduce yourself to the community.
+              </h3>
               <p className="tips alert alert-info h6 my-2 py-2  font-weight-normal ">
                 Now it's time for you to introduce youself to the community.{" "}
                 <strong>
@@ -435,6 +450,9 @@ function JoinUsTabs({ activeTab }) {
 
           <Tab.Pane className="px-3" eventKey="step-6">
             <div>
+              <h3 className="text-center p-4 bg-secondary text-light rounded">
+                Join Discord server of our Campus Chapter
+              </h3>
               <p className="h3 mb-3">
                 muLearn Campus Chapter at Mar Augusthinose College, Ramapuram.
               </p>
@@ -499,6 +517,9 @@ function JoinUsTabs({ activeTab }) {
 
           <Tab.Pane className="px-3" eventKey="step-7">
             <div>
+              <h3 className="text-center p-4 bg-secondary text-light rounded">
+                muLearn: A Guide for Beginners.
+              </h3>
               <p>
                 <span className="h4">Welcome to muLearn</span>, The Place where
                 ME and YOU are gonna learn and upskill together!!
