@@ -11,7 +11,7 @@ function WhatsMulearn() {
         <p className="display-5 fw-600 text-center">
           What's <span className="en-mulearn">μLearn</span>
         </p>
-        <p className="text-md-center px-3">
+        <p className="text-md-center px-3 text-wrap">
           <span>
             <a
               href="https://mulearn.org/"
@@ -27,10 +27,10 @@ function WhatsMulearn() {
           initiated by <a href="https://gtechindia.org/">GTech</a> (Group of
           Technmology Companies), and is a synergy of the Industry, Institutions
           and the Society. With its moto as to
-          <span className="mark">DEMOCRATICE</span>,
-          <span className="mark">DECENTRALISE</span>
+          <span className="mark d-inline-block">DEMOCRATICE</span>,
+          <span className="mark d-inline-block">DECENTRALISE</span>
           and
-          <span className="mark">DIGITISE</span> learning and peer learning as
+          <span className="mark d-inline-block">DIGITISE</span> learning and peer learning as
           its core, μlearn enables students to learn cutting edge technologies,
           carry on projects, connect with like minded peers, seek guidence from
           experts from all over the industry and to land on their dream jobs. As
