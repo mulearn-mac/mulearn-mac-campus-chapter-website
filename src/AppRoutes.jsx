@@ -1,4 +1,3 @@
-import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/home/home";
 
@@ -7,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import DemoPath from "./components/demo-path";
 import "./styles/defaults.css";
 import JoinUs from "./components/joinus/joinus";
+import GetStarted from "./components/get-started/get-started";
 
 function AppRoutes() {
   return (
@@ -15,7 +15,7 @@ function AppRoutes() {
         <Route path="/" element={<Home />} />
         <Route path="/joinus" element={<JoinUs />} />
         <Route path="/social/:handle" element={<DemoPath />} />
-        <Route path="/joinus/guide" element={<DemoPath />} />
+        <Route path="/joinus/guide" element={<GetStarted />} />
         <Route path="/community/tasks" element={<DemoPath />} />
         <Route path="/community/interest-groups" element={<DemoPath />} />
         <Route path="/campus-chapter/execom" element={<DemoPath />} />
