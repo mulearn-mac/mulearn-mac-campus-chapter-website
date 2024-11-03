@@ -1,11 +1,11 @@
 .nav-link:hover,
 .navbar-brand:hover {
-  color: darkorange;
+  color: darkorange !important;
 }
 
 .nav-link,
 .navbar-brand {
-  transition: all 0.5s;
+  transition: all 0.5s !important;
 }
 
 .nav-item {
