@@ -3,8 +3,13 @@ import Header from "./get-started-components/header";
 import NavBar from "../common/nav-bar";
 import Guide from "./get-started-components/guide";
 import Footer from "../common/footer";
+import { useEffect } from "react";
 
 function GetStarted() {
+  useEffect(() => {
+    document.title =
+      "Mulearn: What After Joining the community? - A Guide for Beginners";
+  }, []);
   return (
     <div className="en-Oxanium">
       <NavBar />
