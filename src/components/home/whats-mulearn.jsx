@@ -30,12 +30,12 @@ function WhatsMulearn() {
           <span className="mark d-inline-block">DEMOCRATICE</span>,
           <span className="mark d-inline-block">DECENTRALISE</span>
           and
-          <span className="mark d-inline-block">DIGITISE</span> learning and peer learning as
-          its core, μlearn enables students to learn cutting edge technologies,
-          carry on projects, connect with like minded peers, seek guidence from
-          experts from all over the industry and to land on their dream jobs. As
-          a mulearner, what you only need is the thrive to improve and the
-          courage to ask.
+          <span className="mark d-inline-block">DIGITISE</span> learning and
+          peer learning as its core, μlearn enables students to learn cutting
+          edge technologies, carry on projects, connect with like minded peers,
+          seek guidence from experts from all over the industry and to land on
+          their dream jobs. As a mulearner, what you only need is the thrive to
+          improve and the courage to ask.
         </p>
       </div>
       <div className="col-md-6 d-block">
