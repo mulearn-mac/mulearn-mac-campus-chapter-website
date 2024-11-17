@@ -21,7 +21,7 @@ function AppRoutes() {
         <Route path="/community/interest-groups" element={<DemoPath />} />
         <Route path="/campus-chapter/execom" element={<Execom />} />
         <Route path="/community/faq" element={<DemoPath />} />
-        <Route path="/campus-chapter/events" element={<DemoPath />} />z
+        <Route path="/campus-chapter/events" element={<DemoPath />} />
       </Routes>
     </BrowserRouter>
   );
