@@ -7,6 +7,7 @@ import DemoPath from "./components/demo-path";
 import "./styles/defaults.css";
 import JoinUs from "./components/joinus/joinus";
 import GetStarted from "./components/get-started/get-started";
+import Execom from "./components/execom/execom";
 
 function AppRoutes() {
   return (
@@ -18,7 +19,7 @@ function AppRoutes() {
         <Route path="/joinus/guide" element={<GetStarted />} />
         <Route path="/community/tasks" element={<DemoPath />} />
         <Route path="/community/interest-groups" element={<DemoPath />} />
-        <Route path="/campus-chapter/execom" element={<DemoPath />} />
+        <Route path="/campus-chapter/execom" element={<Execom />} />
         <Route path="/community/faq" element={<DemoPath />} />
         <Route path="/campus-chapter/events" element={<DemoPath />} />z
       </Routes>
